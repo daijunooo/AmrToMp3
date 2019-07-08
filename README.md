@@ -13,6 +13,7 @@ make install
 
 tar -zxvf libmad-0.15.1b.tar.gz
 cd libmad-0.15.1b
+sed -i '/-fforce-mem/d' configure
 ./configure
 make
 make install
