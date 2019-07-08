@@ -58,5 +58,7 @@ sox f.amr f.mp3
 - 如果报错请检查程序依赖库是否正常
 ```
 ldd /usr/local/bin/sox
+//如果缺少依赖库
+ldconfig
 ```
-- 如果不正常请查看依赖库中是否缺少文件，或者 /usr/local/bin 是否加入全局
+
